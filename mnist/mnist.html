@@ -11777,7 +11777,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Loco-learning-MNIST">Loco learning MNIST<a class="anchor-link" href="#Loco-learning-MNIST">&#182;</a></h1><p>A simple example on how to train MNIST digits, step by step</p>
 <h2 id="About-the-MNIST-dataset">About the MNIST dataset<a class="anchor-link" href="#About-the-MNIST-dataset">&#182;</a></h2><p>The postal service of the United States provided this dataset years ago. It consists on thousends of 28x28 pixels images repressenting a handwritten digit, they are correctly labeled (from 0 to 9).</p>
-<p><img src="attachment:mnistSample.jpeg" alt="mnistSample.jpeg"></p>
+<p><img src="pictures/mnistSample.jpeg" alt="title"></p>
 <p>The images are grayscale, so each pixel is represented by a value that goes from 0 to 255.</p>
 <p>Because it is a well known dataset, it is perfect to be used as a first project for machine learning.</p>
 <h2 id="Define-the-problem">Define the problem<a class="anchor-link" href="#Define-the-problem">&#182;</a></h2><p>Given a set of correctly labeled data, we will build a simple algorithm which will be able to label new data. This means that we will, by the end of this demo, be able to provide a NEW image with a handwritten digit and the system should be able to determine which digit it is.</p>
@@ -14052,7 +14052,7 @@ pS+J4JbKG3bS/uPuLef97/x2jlAJ/EkTSwumnupReMT/AP2NUBpaZ4gkfUZHW2UZV+rZ/uUAf//Z
 <pre><code>4 becomes =&gt; [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]</code></pre>
 <p>Once we have our one-hot-encoded values, we will go from our initial vector of correct labels to a matrix.</p>
 <p>And then we will apply this formula</p>
-<p><img src="attachment:crossEntropy.png" alt="crossEntropy.png"></p>
+<p><img src="pictures/crossEntropy.png" alt="title"></p>
 <h3 id="Do-not-worry-if-you-do-not-get-the-math-inmediatly-(I-did-not-either,-at-first)">Do not worry if you do not get the math inmediatly (I did not either, at first)<a class="anchor-link" href="#Do-not-worry-if-you-do-not-get-the-math-inmediatly-(I-did-not-either,-at-first)">&#182;</a></h3><p>The important part to remember is that the predicted probabilities will be a list of 10 positions, and if you sum all of them, you get 1. Of course the prediction is the one with the highest value</p>
 
 </div>
@@ -14146,7 +14146,7 @@ pS+J4JbKG3bS/uPuLef97/x2jlAJ/EkTSwumnupReMT/AP2NUBpaZ4gkfUZHW2UZV+rZ/uUAf//Z
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="How-to-make-predictions">How to make predictions<a class="anchor-link" href="#How-to-make-predictions">&#182;</a></h2><p>Ultimately, in order to get a prediction we just need to execute the following formula</p>
-<p><img src="attachment:prediction.png" alt="prediction.png"></p>
+<p><img src="pictures/prediction.png" alt="title"></p>
 <h3 id="Again,-do-not-let-the-math-intimidate-you.">Again, do not let the math intimidate you.<a class="anchor-link" href="#Again,-do-not-let-the-math-intimidate-you.">&#182;</a></h3><p>A sum is normally translated into code as a simple loop, however, here we are operating with matrices (remember, both X and y are now matrices), matrix multiplications are EXPENSIVE operations. The naive implementation of a matrix multiplication has a cost of</p>
 <h2 id="$O(n)^3$">$O(n)^3$<a class="anchor-link" href="#$O(n)^3$">&#182;</a></h2><p>Fortunately there are other methods such as the Strassen algorithm that can run in</p>
 <h2 id="$O(n)^{2.8074}$">$O(n)^{2.8074}$<a class="anchor-link" href="#$O(n)^{2.8074}$">&#182;</a></h2><p>Even with small N, the difference is huge, for example assume N=100</p>
