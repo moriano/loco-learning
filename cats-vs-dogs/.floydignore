@@ -10,3 +10,5 @@ parts
 sdist
 var
 data
+models
+augmented_data
