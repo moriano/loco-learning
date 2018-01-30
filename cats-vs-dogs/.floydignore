@@ -12,3 +12,6 @@ var
 data
 models
 augmented_data
+keras.model
+keras*
+*.model
